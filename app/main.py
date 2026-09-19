@@ -42,7 +42,7 @@ def startup():
 def healthz():
     if model is None:
         raise HTTPException(status_code=503, detail="Model not loaded")
-    return {"status": "ok"}
+    return {"status": "ok", "version": "v2"}
 
 @app.post("/predict")
 def predict(request: PredictRequest):
