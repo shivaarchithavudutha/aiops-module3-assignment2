@@ -57,3 +57,12 @@ docker build -f Dockerfile -t spam-api:v2 .
 kubectl set image deployment/spam-api-deployment spam-api=spam-api:v2
 kubectl rollout status deployment/spam-api-deployment
 ```
+### AI Disclosure
+#### Tools Used
+- **Gemini**
+#### How They Were Used
+- **Environment & Error Troubleshooting :**(e.g., debugging the `Bind for 0.0.0.0:8000 failed: port is already allocated` container collision, missing Python wheel header compilation dependencies, etc.).
+- **Conceptual Clarification :**Explained underlying systems concepts when needed (e.g., explaining how the Redis caching)
+- **Pair Programming :**Assisted in drafting structural syntax (e.g., scaffolding the multi-stage `Dockerfile` with builder prefix flags, the `docker-compose.yml` service definitions)
+#### Impact on Final Submission
+Gemini served as an interactive pair programmer, technical reviewer, and troubleshooting assistant throughout the project.
